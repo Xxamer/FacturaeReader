@@ -1,9 +1,6 @@
-// index.d.ts
 declare module 'facturaereader' {
-    class FacturaeReader {
-        getFacturae(): string;
-        readFacturae(file: File): string;
-    }
+    function getFacturae(): string;
+    function readFacturae(file: File): string;
 
-    export default FacturaeReader;
+    export { getFacturae, readFacturae };
 }
